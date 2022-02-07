@@ -1,0 +1,17 @@
+<NotepadPlus>
+    <Project name="UnityTool_3C1">
+        <Folder name="dataType">
+            <File name="unityTool\dataType\BoxCollider.py" />
+            <File name="unityTool\dataType\File.py" />
+            <File name="unityTool\dataType\GameObject.py" />
+            <File name="unityTool\dataType\Transform.py" />
+            <File name="unityTool\dataType\__init__.py" />
+            <File name="unityTool\dataType\Component.py" />
+            <File name="unityTool\dataType\Prefab.py" />
+        </Folder>
+        <File name="unityTool\loader.py" />
+        <File name="unityTool\UnityYamlStream.py" />
+        <File name="unityTool\__init__.py" />
+        <File name="unityTool\SceneImporter.py" />
+    </Project>
+</NotepadPlus>

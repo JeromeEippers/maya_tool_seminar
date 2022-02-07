@@ -1,0 +1,7 @@
+//Exercice : create a bevel cube.
+polyCube -w 1 -h 1 -d 1 -sx 1 -sy 1 -sz 1 -ax 0 1 0 -cuv 4 -ch 1;
+move -r 0 0.5 0 ;
+xform -ws -sp 0 0 0 -rp 0 0 0;
+makeIdentity -apply true -t 1 -r 1 -s 1 -n 0 -pn 1;
+
+polyBevel3 -fraction 0.1 -offsetAsFraction 1 -autoFit 1 -depth 1 -mitering 0 -miterAlong 0 -chamfer 1 -segments 2 -worldSpace 1 -smoothingAngle 30 -subdivideNgons 1 -mergeVertices 1 -mergeVertexTolerance 0.0001 -miteringAngle 180 -angleTolerance 180 -ch 1;

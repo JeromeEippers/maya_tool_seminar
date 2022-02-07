@@ -1,0 +1,11 @@
+//Variables and scope
+
+string $myName = "tttt";
+print $myName;
+
+{
+    int $myInt = 5;
+    print $myInt;
+    
+}
+print $myInt;

@@ -1,0 +1,8 @@
+//simple echo command.
+//teach xform : usezfull generic command to know
+
+polyPipe -r 1 -h 2 -t 0.5 -sa 4 -sh 1 -sc 0 -ax 0 1 0 -cuv 1 -rcp 0 -ch 1;
+rotate -r -os -fo 0 45 0 ;
+move -r 0 0.5 0 ;
+xform -ws -sp 0 0 0 -rp 0 0 0;
+makeIdentity -apply true -t 1 -r 1 -s 1 -n 0 -pn 1;
