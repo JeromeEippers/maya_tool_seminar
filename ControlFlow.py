@@ -4,11 +4,12 @@ print(x == 2)
 print(x == 3) 
 print(x < 3)
 print(x != 3)
-print(x <> 3 )
 
 print('John' in ["John", "Rick"])
 print('Jeff' in ["John", "Rick"])
 print('Jeff' not in ["John", "Rick"])
+print('c' in 'abracadabra')
+print('e' in 'abracadabra')
 
 
 #--------------------- IF ---------------------------
@@ -18,21 +19,21 @@ print('Jeff' not in ["John", "Rick"])
 #if else
 x = 0
 if x < 0:
-    print 'negative'
+    print ('negative')
 else:
-    print 'positive'
+    print ('positive')
 
 
 #if elif else
 x = 0
 if x < 0:
-    print 'negative'
+    print ('negative')
 elif x == 0:
-    print 'zero'
+    print ('zero')
 elif x == 1:
-    print 'one'
+    print ('one')
 else:
-    print 'big number'
+    print ('big number')
     
     
 #and or
@@ -92,7 +93,7 @@ if not second_number:
 # Measure some strings:
 words = ['cat', 'window', 'dog']
 for w in words:
-    print w, len(w)
+    print (w, len(w))
     
 #range function
 print( range(5) )
@@ -100,13 +101,13 @@ print( range(3,9) )
 print( range(3,9,2) )
 
 for x in range(5):
-    print x
+    print (x)
     
     
 #mix range and len function to loop over indexes of list
 a = ['Mary', 'had', 'a', 'little', 'lamb']
 for i in range(len(a)):
-    print i, a[i]
+    print (i, a[i])
     
     
 #break
@@ -115,7 +116,7 @@ for x in range(10):
     myList.append( x )
     if x == 5:
         break
-print myList
+print (myList)
         
 
 #continue     
@@ -124,7 +125,7 @@ for x in range(10):
     myList.append( x )
     if x == 5:
         continue
-print myList
+print (myList)
 
 
 #EXERCICE 2
@@ -144,15 +145,15 @@ numbers = [
 #loop and dictionnaries
 myDict = {1:"Aa" , 2:"Bb", 3:"Cc"}
 for key in myDict.keys():
-    print key
+    print (key)
     
 myDict = {1:"Aa" , 2:"Bb", 3:"Cc"}
 for value in myDict.values():
-    print value
+    print (value)
     
 myDict = {'first': 100, 'second': 'YES', 5: 100, 6: 'NO'}
-for key, value in myDict.iteritems():
-    print key, value
+for key, value in myDict.items():
+    print (key, value)
     
     
     
@@ -174,15 +175,15 @@ my_function_with_args("John Doe", "a great year!")
 
 # after this line x will hold the value 3!
 x = sum_two_numbers(1,2)
-print x
+print (x)
 
 
 #default argument ------
 def parrot(voltage, state='a stiff', action='voom', type='Norwegian Blue'):
-    print "-- This parrot wouldn't", action,
-    print "if you put", voltage, "volts through it."
-    print "-- Lovely plumage, the", type
-    print "-- It's", state, "!"
+    print ("-- This parrot wouldn't", action,)
+    print ("if you put", voltage, "volts through it.")
+    print ("-- Lovely plumage, the", type)
+    print ("-- It's", state, "!")
     
 parrot(1000)                                          # 1 positional argument
 parrot(voltage=1000)                                  # 1 keyword argument
@@ -194,16 +195,16 @@ parrot('a thousand', state='pushing up the daisies')  # 1 positional, 1 keyword
 
 #multiple return and unpack
 def myFunction():
-    return 10 , 20
+    return (10 , 20)
     
 x, y = myFunction()
-print x
-print y
+print (x)
+print (y)
 
 
 
 #EXERCICE 3
-#Modify this funciton to return a list of names
+#Modify this function to return a list of names
 def get_name_list():
     pass
     
