@@ -1,0 +1,11 @@
+{
+    string $selection[] = `ls -sl`;
+    print $selection;
+    int $vert_count[] = `polyEvaluate -vertex $selection[0]`;
+    print $vert_count[0];
+    int $i;
+    for ($i=0; $i<$vert_count[0]; $i++){
+        float $positions[] = `xform -q -t ($selection[0]+".vtx["+$i+"]")`;
+        print ("Vertex " + $i + " = " + $positions[0] +" "+ $positions[1] +" "+ $positions[2] +"\n");
+    }
+}
